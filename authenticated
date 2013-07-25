@@ -1,0 +1,37 @@
+Script started on Thu Jul 25 17:27:55 2013
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m ls
+Gemfile       README.rdoc  authenticated  [0m[01;34mdb[0m       [01;34mlib[0m     [01;34mscript[0m  [01;34mtmp[0m
+Gemfile.lock  Rakefile     [01;34mconfig[0m         [01;34mdoc[0m      [01;34mlog[0m     [01;34mspec[0m    user_spec.rb
+Guardfile     [01;34mapp[0m          config.ru      install  [01;34mpublic[0m  [01;34mtest[0m    [01;34mvendor[0m
+[m]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m rails c
+Loading development environment (Rails 3.2.11)
+irb(main):001:0> user    User.first
+  [1m[36m (2.8ms)[0m  [1mSELECT * FROM geometry_columns WHERE f_table_name='users'[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+=> #<User id: 1, name: "manish untwal", email: "manishuntwal6@gmail.com", created_at: "2013-07-25 06:39:11", updated_at: "2013-07-25 06:39:11", password_digest: "$2a$10$CUAh8olbYRrROusoz2/jJ.GPtTSrueygBZvJTQmWbNuk...">
+irb(main):002:0> User.first[1@u[1@ [1@=[1@ 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+=> #<User id: 1, name: "manish untwal", email: "manishuntwal6@gmail.com", created_at: "2013-07-25 06:39:11", updated_at: "2013-07-25 06:39:11", password_digest: "$2a$10$CUAh8olbYRrROusoz2/jJ.GPtTSrueygBZvJTQmWbNuk...">
+irb(main):003:0> u.authenticate()m)a)[1P)[1P)r)a)j)k)u)m)a)r)
+NameError: undefined local variable or method `rajkumar' for main:Object
+	from (irb):3
+	from /usr/local/rvm/gems/ruby-1.9.3-p327/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.3-p327/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.3-p327/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+irb(main):004:0> u.authenticate(rajkumar)[1@"rajkumar")
+=> #<User id: 1, name: "manish untwal", email: "manishuntwal6@gmail.com", created_at: "2013-07-25 06:39:11", updated_at: "2013-07-25 06:39:11", password_digest: "$2a$10$CUAh8olbYRrROusoz2/jJ.GPtTSrueygBZvJTQmWbNuk...">
+irb(main):005:0> u.authenticate("rajkumar")u.aut[1@r[1@a[1@i[1@l[1@s[1@ [1@g[1@e[1@n[1@e[1@r[1@a[1@t[1@e[1@ [1@m[1@i[1@g[1@r[1@a[1@t[1@i[1@o[1@n[1@ [1@a[1@d[1@d[1@_[1@r[1@e[1@m[1@e[1@m[1@b[1@e[1@r[1@_[1@t[1@o[1@k[1@e[1@n[1@_[1@t[1@o_henticate("rajkumar") Mrb(main):005:0> u.autrails generate migration add_remember_token_to_uhenticate("rajkumar"))Mrb(main):005:0> u.autrails generate migration add_remember_token_to_ushenticate("rajkumar")Mb(main):005:0> u.autrails generate migration add_remember_token_to_usehenticate("rajkumar")M(main):005:0> u.autrails generate migration add_remember_token_to_userhenticate("rajkuma[1@rMb(main):005:0> u.autrails generate migration add_remember_token_to_usershenticate("rajkum[1@aMb(main):005:0> u.autrails generate migration add_remember_token_to_users
+
+NoMethodError: undefined method `add_remember_token_to_usershenticate' for main:Object
+	from (irb):5
+	from /usr/local/rvm/gems/ruby-1.9.3-p327/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.3-p327/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.3-p327/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+irb(main):006:0> exit
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m rails c[K[K[K[K[K[K[Krails generate migration add_remember_token_to_users
+[1m[37m      invoke[0m  active_record
+Another migration is already named add_remember_token_to_users: /home/dev/rails_project/sample_app/db/migrate/20130725081908_add_remember_token_to_u
