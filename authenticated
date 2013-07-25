@@ -34,4 +34,58 @@ NoMethodError: undefined method `add_remember_token_to_usershenticate' for main:
 irb(main):006:0> exit
 ]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m rails c[K[K[K[K[K[K[Krails generate migration add_remember_token_to_users
 [1m[37m      invoke[0m  active_record
-Another migration is already named add_remember_token_to_users: /home/dev/rails_project/sample_app/db/migrate/20130725081908_add_remember_token_to_u
+Another migration is already named add_remember_token_to_users: /home/dev/rails_project/sample_app/db/migrate/20130725081908_add_remember_token_to_users.rb
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m rake[K[K[K[Krem[K[K[Krem[K[K[Ku[Krailc[Ks c
+Loading development environment (Rails 3.2.11)
+irb(main):001:0> User
+  [1m[36m (2.1ms)[0m  [1mSELECT * FROM geometry_columns WHERE f_table_name='users'[0m
+=> User(id: integer, name: string, email: string, created_at: datetime, updated_at: datetime, password_digest: string)
+irb(main):002:0> rake db:mo igrate
+NameError: undefined local variable or method `migrate' for main:Object
+	from (irb):2
+	from /usr/local/rvm/gems/ruby-1.9.3-p327/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.3-p327/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /usr/local/rvm/gems/ruby-1.9.3-p327/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+irb(main):003:0> exit
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m rake db:migrate
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m ls
+Gemfile       README.rdoc  authenticated  [0m[01;34mdb[0m       [01;34mlib[0m     [01;34mscript[0m  [01;34mtmp[0m
+Gemfile.lock  Rakefile     [01;34mconfig[0m         [01;34mdoc[0m      [01;34mlog[0m     [01;34mspec[0m    user_spec.rb
+Guardfile     [01;34mapp[0m          config.ru      install  [01;34mpublic[0m  [01;34mtest[0m    [01;34mvendor[0m
+[m]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m bundle e[Kexre[K[Ke ra[K[K[Kx [K[Kc rake:[K db:ra[K[Kcon[K[K[Kmigrate
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m rake db:migrate
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m users ra[K[K[K[K[K[K[K[Krails s
+=> Booting WEBrick
+=> Rails 3.2.11 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+A server is already running. Check /home/dev/rails_project/sample_app/tmp/pids/server.pid.
+Exiting
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m rails c
+Loading development environment (Rails 3.2.11)
+irb(main):001:0> Users 
+  [1m[36m (2.1ms)[0m  [1mSELECT * FROM geometry_columns WHERE f_table_name='users'[0m
+=> User(id: integer, name: string, email: string, created_at: datetime, updated_at: datetime, password_digest: string)
+irb(main):002:0> exit
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m rails generate migration add_remember_token_to_users
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20130725123417_add_remember_token_to_users.rb
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m rak[K[K[Kbundle exec rake db:migrate
+==  AddRememberTokenToUsers: migrating ========================================
+-- add_column(:users, :remember_token, :string)
+   -> 0.0005s
+-- add_index(:users, :remember_token)
+   -> 0.0266s
+==  AddRememberTokenToUsers: migrated (0.0272s) ===============================
+
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m git add .
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m git m[Kcomment -m ""F"i"n"s"[1P"i"s"h" "S"i"[1P"[1P"s"i"g"n" "i"n"[C
+git: 'comment' is not a git command. See 'git --help'.
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;37mmanish[01;34m sample_app >[00m git comment -m "Finish sign in"[1P[1@i
+git: 'commint' is not a git command. See 'git --help'.
+
+Did you mean this?
+	commit
+]0;dev@manish:~/rails_project/sample_app\[01;31mdev [01;
